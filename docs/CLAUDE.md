@@ -10,7 +10,7 @@ This project must satisfy **TWO rubrics simultaneously**:
 - Tree-based structures: TreeMap, TreeSet are PROHIBITED per rubric
 - Use: Classic sorting algorithms (Insertion Sort, Bubble Sort, Selection Sort)
 
-## Current Project Status (Updated Nov 18, 2025 - Phase 7 Complete)
+## Current Project Status (Updated Nov 20, 2025 - Phase 8 Complete)
 
 ✓ **Strengths**:
 - ✅ Strong OOP implementation (Encapsulation, Inheritance, Abstraction, Polymorphism)
@@ -24,7 +24,33 @@ This project must satisfy **TWO rubrics simultaneously**:
 - ✅ Centralized access control (single source of truth)
 - ✅ Professional documentation (7 markdown files)
 
-✅ **COMPLETED This Session (Phases 1-7)**:
+✅ **COMPLETED This Session (Phases 1-8)**:
+
+**Phase 8 (Code Organization & GitHub Setup - COMPLETED):**
+37. ✅ Refactored project structure for better architecture:
+    - Moved AuthenticationManager from auth/ to managers/ folder
+    - Updated package declaration and imports
+    - Updated CustomerManager to reference correct package
+    - Verified compilation with zero errors
+38. ✅ Organized documentation professionally:
+    - Created docs/ folder with 4 subfolders (architecture, design, technical, project)
+    - Moved all 12 markdown files to appropriate categories
+    - Architecture: UML diagrams, design patterns, class connections
+    - Design: Authentication & Security architecture
+    - Technical: Data structures explanation
+    - Project: Status, progress, presentation, future enhancements
+39. ✅ Set up GitHub repository:
+    - Created GitHub repository: https://github.com/JuanAndrda/BankingProject
+    - Initialized local Git with proper .gitignore (excludes bin/, .idea/, .class files)
+    - Created comprehensive initial commit (37 files, 13,688 lines)
+    - Authenticated with Personal Access Token
+    - Pushed main branch to GitHub successfully
+    - Repository now publicly accessible for groupmates to download/clone
+40. ✅ Documented GitHub setup for future reference
+    - Added GitHub repository link to this guide
+    - Instructions for groupmates to clone and download
+
+**Previous Phases (Phases 1-7)**:
 
 **Phase 7 (UML Diagrams & Class Connections - COMPLETED):**
 32. ✅ Created comprehensive UML Class Diagram documentation:
@@ -274,6 +300,77 @@ This project must satisfy **TWO rubrics simultaneously**:
 - ✓ Comprehensive documentation
 - ✓ Professional UML diagram
 - ✓ Ready for presentation
+
+---
+
+## GitHub Repository Information
+
+**Repository URL:** https://github.com/JuanAndrda/BankingProject
+
+**Setup Status:** ✅ Complete (Phase 8, Nov 20, 2025)
+
+**For Next Session / Groupmates:**
+
+### How to Get the Project
+
+**Option 1: Clone with Git**
+```bash
+git clone https://github.com/JuanAndrda/BankingProject.git
+cd BankingProject
+```
+
+**Option 2: Download as ZIP**
+1. Go to https://github.com/JuanAndrda/BankingProject
+2. Click green "Code" button → "Download ZIP"
+3. Extract and open in your IDE
+
+### How to Compile & Run
+
+```bash
+cd src
+javac -d ../bin com/banking/*.java com/banking/models/*.java com/banking/auth/*.java com/banking/managers/*.java com/banking/utilities/*.java
+cd ../bin
+java com.banking.Main
+```
+
+### Making Changes & Pushing to GitHub
+
+After making code changes:
+```bash
+git add .
+git commit -m "Your descriptive commit message"
+git push origin main
+```
+
+**Note:** Push changes regularly so groupmates can see updates!
+
+### Project Structure on GitHub
+
+```
+BankingProject/
+├── src/              [All Java source code (22 classes)]
+├── docs/             [All documentation organized by category]
+│   ├── architecture/ [UML, design patterns, connections]
+│   ├── design/       [Auth & Security design]
+│   ├── technical/    [Data structures]
+│   └── project/      [Status, progress, presentation]
+├── bin/              [Compiled classes (not in GitHub)]
+└── .gitignore        [Excludes compiled files, IDE settings]
+```
+
+### GitHub Best Practices
+
+✅ **DO:**
+- Push changes at end of each work session
+- Write clear, descriptive commit messages
+- Pull latest changes before starting work (`git pull origin main`)
+- Include what changed and why in commit message
+
+⚠️ **DON'T:**
+- Push compiled files (already excluded by .gitignore)
+- Push IDE settings or temporary files
+- Overwrite others' changes without coordination
+- Push broken/non-compiling code
 
 ---
 
